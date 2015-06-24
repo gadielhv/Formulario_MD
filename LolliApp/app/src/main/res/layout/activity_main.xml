@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Nombre:"
+        android:layout_height="wrap_content"
+
+        />
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Edad:"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo:"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            android:id="@+id/sexo" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mujer"
+            android:id="@+id/sexo1" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento:"
+        android:id="@+id/fecnac"
+        />
+    <Spinner
+        android:id="@+id/lista1"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/fecnac"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imprimir Datos"
+        android:id="@+id/imprimir"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>
